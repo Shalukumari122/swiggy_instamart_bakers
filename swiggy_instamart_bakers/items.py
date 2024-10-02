@@ -1,0 +1,26 @@
+# Define here the models for your scraped items
+#
+# See documentation in:
+# https://docs.scrapy.org/en/latest/topics/items.html
+
+import scrapy
+
+
+class SwiggyInstamartBakersItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    pass
+
+class SwiggyInstamartBakersItem_Product(scrapy.Item):
+
+    def __setitem__(self, key, value):
+        self._values[key] = value
+        self.fields[key] = scrapy.Field()
+
+
+class SwiggyInstamartBakersItem_Product1(scrapy.Item):
+
+    def __setitem__(self, key, value):
+        self._values[key] = value
+        self.fields[key] = scrapy.Field()
+
